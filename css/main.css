@@ -4,35 +4,47 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-    url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/poppins-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/poppins-v20-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+
 /* poppins-500 - latin */
 @font-face {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     src: local(''),
-    url('../fonts/poppins-v20-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/poppins-v20-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('../fonts/poppins-v20-latin-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/poppins-v20-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* poppins-600 - latin */
 @font-face {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     src: local(''),
-    url('../fonts/poppins-v20-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/poppins-v20-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('../fonts/poppins-v20-latin-600.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/poppins-v20-latin-600.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* poppins-700 - latin */
 @font-face {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     src: local(''),
-    url('../fonts/poppins-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/poppins-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('../fonts/poppins-v20-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/poppins-v20-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 
@@ -45,6 +57,7 @@
     --video-section-bg-color: #152242;
 }
 
+
 html{
     box-sizing: border-box;
     height: 100%;
@@ -56,6 +69,7 @@ html{
 *::after {
     box-sizing: inherit;
 }
+
 
 body{
     display: flex;
@@ -356,4 +370,118 @@ a{
 
 
 /* HERO SECTION END */
+
+/* FURNITURE SECTION STYLES START */
+
+.furniture {
+    margin-top: 144px;
+    padding-bottom: 232px;
+    background-color: var(--main-bg-color);
+    background-image: url(/images/Furniture-bg.svg), url(../images/Furniture-bg-quart.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 730px)  calc(50% + 350px), calc(50% + 520px) calc(50% + 60px);
+}
+
+.furniture-wrapper {
+    width: 100%;
+}
+
+.furniture-slogan {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+
+.furniture-title {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 52px;
+    line-height: 64px;
+    color: var(--main-text-color);
+}
+
+.furniture-title::after {
+    margin-top: 15px;
+    content: "";
+    display: block;
+    width: 154px;
+    height: 6px;
+    background-color: var(--header-text-color);
+}
+
+.furniture-desc {
+    max-width: 475px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: var(--main-subtitle-color);
+}
+
+.furniture-btn {    
+    display: inline-block;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: var(--main-bg-color);
+    background-color: var(--header-text-color);
+}
+
+.furniture-btn:hover{
+    border: 2px solid var(--header-text-color);
+    color: var(--header-text-color);
+    background-color: var(--main-bg-color);
+    padding: 18px 48px;
+}
+
+.furniture-btn:active{
+    border: 2px solid var(--header-text-color);
+    color: var(--header-text-color);
+    background-color: var(--main-bg-color);
+    padding: 18px 48px;
+}
+/* FURNITURE MOBILE START */
+
+@media only screen and (max-width: 1000px) {
+    .furniture-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .furniture-slogan {
+        font-size: 15px;
+    }
+
+    .furniture-title {
+        font-size: 48px;
+    }
+
+    .furniture-desc {
+        font-size: 15px;
+    }
+
+    .furniture-btn {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 245px;
+    }
+}
+
+
+/* FURNITURE MOBILE END */
+/* FURNITURE SECTION STYLES END */
 /* *** MAIN PART END  */
