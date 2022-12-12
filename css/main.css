@@ -185,5 +185,85 @@ a{
 }
 /* HEADER RESPONSIVE STYLES END */
 /* HEADER STYLES END */
+
+/* HERO STYLES START */
+.hero-section{
+    padding-top: 157px;
+    padding-bottom: 220px;
+}
+
+.hero-section__start{
+    width: 100%;
+    max-width: 460px;
+}
+
+.hero-section__title{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 84px;
+    letter-spacing: 0.1em;
+    color: var(--main-text-color);    
+}
+
+.hero-section__desc{
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--main-subtitle-color);
+}
+
+.hero-section__form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 460px;
+}
+
+.hero-section__input{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 37px;
+    border: none;
+    outline: none;
+    background-color: #F1F1F1;
+}
+
+.hero-section__input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #747DA1;    
+}
+
+.hero-section__search-btn{
+    padding: 12px 39px;
+    border: 2px solid var(--header-text-color);
+    background-color: var(--header-text-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
+
+/* HERO RESPONSIVE STYLES START */
+@media only screen and (max-width: 567px) {
+    .hero-section__title{
+        font-size: 45px;
+        line-height: 64px;
+    }
+
+    .hero-section__desc{
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+/* HERO RESPONSIVE STYLES END */
+/* HERO STYLES END */
 /**************** SITE TOP STYLES END **************/
 
