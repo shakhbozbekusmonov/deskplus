@@ -166,6 +166,7 @@ img {
   }
   .footer_end {
     justify-content: center;
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 767.98px) {
