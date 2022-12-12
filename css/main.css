@@ -267,3 +267,93 @@ a{
 /* HERO STYLES END */
 /**************** SITE TOP STYLES END **************/
 
+
+
+
+
+/* *** MAIN PART START */
+/* HERO SECTION START */
+
+.site-main {}
+
+.our-section {
+    background-image: url(/images/Dot\ Design.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 507px) calc(50% - 45px);
+    padding: 150px 0 144px 0;
+}
+
+.site-header__title {
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 64px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 101px;
+}
+
+.hero-section__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.hero-section__item {
+    position: relative;
+    width: 357px;
+    height: 264px;
+    list-style: none;
+    box-shadow: 0px 7px 15px rgba(8, 60, 110, 0.1)
+}
+
+.hero-section__item__img {}
+
+.hero-section__item__link {
+    position: absolute;
+    z-index: 9;
+    top: calc(50% - 113px);
+    right: calc(50% + 75px);
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 8px 23px 8px 23px;
+    background-color: #083C6E;
+}
+
+.hero-section__item__box {
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 357px;
+    top: calc(50% + 46px);
+    padding: 8px 12px 7px 12px;
+    background: #083C6E;
+    opacity: 0.8;
+}
+
+.hero-section__item__box__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.hero-section__item__box__price {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 13px 24px;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+
+/* HERO SECTION END */
+/* *** MAIN PART END  */
