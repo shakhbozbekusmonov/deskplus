@@ -1,3 +1,4 @@
+
 /* poppins-regular - latin */
 @font-face {
     font-family: 'Poppins';
@@ -54,7 +55,44 @@ html{
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1152px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 body{
@@ -701,4 +739,100 @@ video {
 
 
 /* Benefit Section Styles End */
+
+/********* FOOTER SECTION  ***********/
+.site_footer {
+  background-color: var(--video-section-bg-color);
+  padding-top: 367px;
+}
+.footer_wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.footer_list {
+  list-style: none;
+  padding-left: 0;
+}
+.footer_list_item {
+  width: 255px;
+}
+.footer_list_top {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+.footer_list_item_link {
+  font-family: "Rubik", "Arial", sans-serif;
+  text-decoration: none;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer_addres {
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+.footer_end {
+  display: flex;
+  padding-top: 30.8px;
+  padding-bottom: 31px;
+  gap: 12.6px;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+
+  .footer_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_addres {
+    width: 200px;
+  }
+  .footer_end {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .container {
+    max-width: 100%;
+  }
+  .footer_wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer_addres {
+    width: 200px;
+  }
+  .footer_social_links {
+    margin-left: -115px;
+    margin-bottom: 50px;
+  }
+  .footer_end {
+    justify-content: center;
+  }
+}
 /* *** MAIN PART END  */
